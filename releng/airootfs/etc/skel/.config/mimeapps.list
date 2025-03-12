@@ -1,0 +1,7 @@
+[Default Applications]
+application/pdf=org.gnome.Evince.desktop
+application/octet-stream=org.gnome.TextEditor.desktop
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;
+application/octet-stream=org.gnome.TextEditor.desktop;

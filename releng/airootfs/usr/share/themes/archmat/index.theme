@@ -1,0 +1,19 @@
+[GTK]
+Name=archmat
+Comment=Arch Linux themed GTK4 theme for Italian users
+
+
+[Application]
+Name=archmat
+
+[Settings]
+gtk-shell-shows-app-menu=false
+
+[WM]
+Name=Metacity
+
+[GtkSettings]
+gtk-application-prefer-dark-theme=true
+gtk-theme-name=archmat
+gtk-fallback-icon-theme=gnome
+gtk-icon-theme-name=archmat

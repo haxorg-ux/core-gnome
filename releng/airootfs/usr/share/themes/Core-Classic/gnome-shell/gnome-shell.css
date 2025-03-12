@@ -1,0 +1,376 @@
+stage{
+font-family:'Architalia';
+font-size:16px;
+font-weight:bold;
+
+}
+
+#panel{
+/*background:rgba(46, 52, 64, 1);
+margin:2px 10px;
+border-radius:25px;
+ box-shadow: none; */
+background:#2e3440;
+border-radius:16px;
+margin:5px  10px  0 10px;
+border: none;
+ box-shadow: none;
+}
+
+#panel .panel-button{
+font-family:'Architalia';
+font-weight:bold;
+font-size:16px;
+/*color:#2e3440;   #4c566a*/
+
+
+}
+
+/* OSD Elements */
+#LookingGlassDialog, .screenshot-ui-panel, .workspace-switcher, .switcher-list, .resize-popup, .osd-monitor-label, .osd-window {
+  color: #ffffff;
+  background-color: #2e3440;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 999px;
+  padding: 12px; }
+
+/*icona activities*/
+
+#panel .panel-button#panelActivities {
+  background-image: url("assets/core.png");
+  background-position: center center;
+  background-size: 60px 20px;
+  width: 60px;
+  height: 20px;
+  background-gradient-direction: none;
+  border: none;
+  color: transparent;
+  font-size: 0;
+  margin-left:0px ;
+
+
+}
+
+#panel .panel-button#panelActivities > * {
+  width: 50px;
+
+ 
+}
+
+
+#panel .panel-button:active:hover, #panel .panel-button:overview:hover, #panel .panel-button:focus:hover, #panel .panel-button:checked:hover, #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked   {
+        box-shadow: inset 0 0 0 100px rgba(76, 86, 106, .35); 
+        
+  }
+
+/********************************************************/
+
+
+
+#panel .panel-button.clock-display {
+  transition-duration: 150ms;
+  border: 3px solid transparent;
+  border-radius: 99px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #545f75;
+  box-shadow: none;
+  box-shadow: none !important;
+}
+
+#panel .panel-button.clock-display:active,
+#panel .panel-button.clock-display:overview,
+#panel .panel-button.clock-display:focus,
+#panel .panel-button.clock-display:checked {
+  box-shadow: inset 0 0 0 100px red;
+}
+
+#panel .panel-button.clock-display .clock {
+  transition-duration: 150ms;
+  border: 2px solid #545f75;
+  border-radius: 12px;
+}
+
+#panel .panel-button.clock-display:active,
+#panel .panel-button.clock-display:overview,
+#panel .panel-button.clock-display:focus,
+#panel .panel-button.clock-display:checked {
+  box-shadow: none !important;
+}
+
+#panel .panel-button.clock-display:active .clock,
+#panel .panel-button.clock-display:overview .clock,
+#panel .panel-button.clock-display:focus .clock,
+#panel .panel-button.clock-display:checked .clock {
+  box-shadow: inset 0 0 0 100px #2e3440;
+  color:#d8dee9;
+  border: 2px solid #d8dee9;
+  
+}
+
+#panel .panel-button.clock-display:hover {
+  box-shadow: none !important;
+}
+
+#panel .panel-button.clock-display:hover .clock {
+  box-shadow: inset 0 0 0 100px transparent;
+  color:#81a1c1;
+  border: 2px solid #81a1c1;
+}
+
+
+
+#panel .panel-button:hover {
+  box-shadow: inset 0 0 0 100px rgba(76, 86, 106, 0.35);
+} 
+
+  .clock-display-box .clock {
+   
+   
+   border-radius:12px;
+   margin: 3px;
+   
+   }
+#panel .clock{
+font-size:16px!important;
+}
+
+
+
+
+/*overview*/
+#overview{background:#2e3440;}
+
+
+/*menu*/
+
+.popup-menu-content, .candidate-popup-content {
+  padding: 6px;
+  background-color: #2e3440;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05); }
+
+.quick-toggle-menu {
+  border-radius: 12px;
+  margin: 4px;
+  transition-duration: 100ms;
+  color: white;
+  background-color: #3b4252!important;
+  color: white !important;
+  border-radius: 24px;
+  padding: 12px;
+  margin: 12px 18px 0; }
+
+    
+   /*ok*/ 
+  .popup-menu-item:focus, .popup-menu-item:hover {
+    transition-duration: 100ms;
+    color: #3b4252; 
+    background-color: #d8dee9;
+    font-weight:bold;
+    }
+    
+    
+    
+/*bottone attivo e freccia*/
+  .quick-toggle:checked {
+    transition-duration: 100ms;
+    background-color: #5e81ac;
+    color: #ffffff;
+    }
+    .quick-menu-toggle .quick-toggle-arrow:checked {
+    transition-duration: 100ms;
+    background-color:#5e81ac;
+    color: #ffffff;
+    border-color: #15539e; }
+    /* end bottone attivo e freccia*/
+    
+    
+    /*bottone e freccia hover*/
+    .quick-toggle:checked:focus {
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6) !important; }
+    .quick-toggle:checked:hover, .quick-toggle:checked:focus {
+      background-color: #81a1c1;
+      color: white; 
+      }
+    .quick-menu-toggle .quick-toggle-arrow:checked:hover, .quick-menu-toggle .quick-toggle-arrow:checked:focus {
+      background-color: #81a1c1;
+      color: white; }  
+      /* end bottone e freccia hover*/ 
+      
+ 
+
+
+/* Slider */
+.slider {
+  -barlevel-height: 4px;
+  -barlevel-background-color: rgba(255, 255, 255, 0.2);
+  -barlevel-border-width: 2px;
+  -barlevel-border-color: transparent;
+  -barlevel-active-background-color: #81a1c1;
+  -barlevel-active-border-color: transparent;
+  -barlevel-overdrive-color: #e01b24;
+  -barlevel-overdrive-border-color: transparent;
+  -barlevel-overdrive-separator-width: 1px;
+  -slider-handle-radius: 8px;
+  -slider-handle-border-width: 0;
+  -slider-handle-border-color: transparent; }
+
+
+
+/*Dash*/
+
+
+.dash-label, .window-caption, .screenshot-ui-tooltip {
+  background-color: #3b4252;
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border-radius: 99px;
+  padding: 6px 12px;
+  text-align: center; }
+
+.dash-background {
+  background-color: #3b4252;
+  border-radius: 28px;
+  padding: 12px;
+  spacing: 6px;
+  margin-bottom: 12px; }
+
+
+.show-apps .show-apps-icon {
+  color: transparent !important;
+  background-image: url("assets/menu.png");
+  background-size: contain;
+}
+
+.show-apps .overview-icon, .show-apps .show-apps-icon {
+  color: transparent !important;
+}
+
+
+
+.app-folder-dialog .folder-name-container .edit-folder-button, .button, .calendar .calendar-day.calendar-today, .calendar .calendar-day, .calendar .calendar-month-header .pager-button, .icon-button, .login-dialog-button.cancel-button, .login-dialog-button.switch-user-button, .login-dialog-button.login-dialog-session-list-button, .background-app-item .close-button {
+  transition-duration: 100ms;
+  color: white;
+  background-color: #3b4252; }
+  
+  .app-folder-dialog .folder-name-container .flat.edit-folder-button, .calendar .app-folder-dialog .folder-name-container .calendar-day.edit-folder-button, .app-folder-dialog .folder-name-container .calendar .calendar-day.edit-folder-button, .flat.button, .calendar .button.calendar-day, .calendar .calendar-day.calendar-today, .calendar .flat.calendar-day, .calendar .calendar-day, .calendar .calendar-month-header .pager-button, .flat.icon-button, .flat.login-dialog-button.cancel-button, .flat.login-dialog-button.switch-user-button, .flat.login-dialog-button.login-dialog-session-list-button, .background-app-item .flat.close-button, .calendar .icon-button.calendar-day, .calendar .calendar-day.login-dialog-button.cancel-button, .calendar .calendar-day.login-dialog-button.switch-user-button, .calendar .calendar-day.login-dialog-button.login-dialog-session-list-button, .calendar .background-app-item .calendar-day.close-button, .background-app-item .calendar .calendar-day.close-button {
+    transition-duration: 100ms;
+    color: white;
+    background-color: #3b4252;
+    background-color: transparent; }
+    
+    #LookingGlassDialog .notebook-tab, #LookingGlassDialog > #Toolbar .lg-toolbar-button, .screenshot-ui-show-pointer-button, .screenshot-ui-type-button {
+  transition-duration: 100ms;
+  color: #ffffff;
+  background-color: #3b4252; }
+  
+  .events-button {
+  border-radius: 12px;
+  margin: 4px;
+  transition-duration: 100ms;
+  color: white;
+  background-color: #3b4252;
+  padding: 12px; }
+
+.world-clocks-button {
+  border-radius: 12px;
+  margin: 4px;
+  transition-duration: 100ms;
+  color: white;
+  background-color: #3b4252;
+  padding: 12px; }
+
+.message {
+  border-radius: 12px;
+  margin: 4px;
+  transition-duration: 100ms;
+  color: white;
+  background-color: #3b4252; }
+
+ .quick-settings-system-item .power-item:insensitive {
+    transition-duration: 100ms;
+    color: white;
+    background-color: #3b4252;
+    background-color: transparent; }
+
+   .app-folder-dialog .folder-name-container .default.edit-folder-button:hover, .default.button:hover, .calendar .default.calendar-day:hover, .calendar .calendar-day.calendar-today:hover, .calendar .calendar-month-header .default.pager-button:hover, .default.icon-button:hover, .default.login-dialog-button.cancel-button:hover, .default.login-dialog-button.switch-user-button:hover, .default.login-dialog-button.login-dialog-session-list-button:hover, .background-app-item .default.close-button:hover, .app-folder-dialog .folder-name-container .default.edit-folder-button:focus, .default.button:focus, .calendar .default.calendar-day:focus, .calendar .calendar-day.calendar-today:focus, .calendar .calendar-month-header .default.pager-button:focus, .default.icon-button:focus, .default.login-dialog-button.cancel-button:focus, .default.login-dialog-button.switch-user-button:focus, .default.login-dialog-button.login-dialog-session-list-button:focus, .background-app-item .default.close-button:focus {
+      background-color: #81a1c1;
+      color: white; }
+
+   .app-folder-dialog .folder-name-container .flat.default.edit-folder-button:hover, .flat.default.button:hover, .calendar .default.calendar-day:hover, .calendar .calendar-day.calendar-today:hover, .calendar .calendar-month-header .default.pager-button:hover, .default.icon-button:hover, .default.login-dialog-button.cancel-button:hover, .default.login-dialog-button.switch-user-button:hover, .default.login-dialog-button.login-dialog-session-list-button:hover, .background-app-item .default.close-button:hover, .app-folder-dialog .folder-name-container .flat.default.edit-folder-button:focus, .flat.default.button:focus, .calendar .default.calendar-day:focus, .calendar .calendar-day.calendar-today:focus, .calendar .calendar-month-header .default.pager-button:focus, .default.icon-button:focus, .default.login-dialog-button.cancel-button:focus, .default.login-dialog-button.switch-user-button:focus, .default.login-dialog-button.login-dialog-session-list-button:focus, .background-app-item .default.close-button:focus {
+        background-color: #81a1c1;
+        color: white; }
+
+
+
+
+   .quick-toggle:checked:focus {
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6) !important; }
+    .quick-toggle:checked:hover, .quick-toggle:checked:focus {
+      background-color: #81a1c1;
+      color: white; }
+
+    .quick-menu-toggle .quick-toggle-arrow:checked:hover, .quick-menu-toggle .quick-toggle-arrow:checked:focus {
+      background-color: #81a1c1;
+      color: white; }
+
+   .keyboard-key.default-key:latched {
+      border-color: #81a1c1;}
+
+.emoji-panel .keyboard-key:latched {
+  border-color: #81a1c1;
+  background-color: #3584e4; }
+
+  .login-dialog-user-list:expanded .login-dialog-user-list-item:selected:hover {
+        background-color: #81a1c1; }
+
+/* Weather */
+.weather-button {
+  border-radius: 12px;
+  margin: 4px;
+  transition-duration: 100ms;
+  color: white;
+  background-color:#3b4252;
+  padding: 12px; }
+  .weather-button:hover {
+    transition-duration: 100ms;
+    color: white;
+    background-color: #4c566a; }
+  .weather-button:active {
+    transition-duration: 100ms;
+    color: white;
+    background-color: #565656; }
+  .weather-button:focus {
+    transition-duration: 100ms;
+    color: white;
+    background-color: #454d57;
+    box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.6) !important; }
+    .weather-button:focus:hover {
+      background-color: #4c545e;
+      box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.7) !important; }
+    .weather-button:focus:active {
+      background-color: #535b64;
+      box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.7) !important; }
+  .weather-button:insensitive {
+    transition-duration: 100ms;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05); }
+  .weather-button .weather-box {
+    spacing: 10px; }
+  .weather-button .weather-header-box {
+    spacing: 6px; }
+  .weather-button .weather-header {
+    color: #9a9a9a; }
+    .weather-button .weather-header.location {
+      font-weight: normal; }
+  .weather-button .weather-grid {
+    spacing-rows: 6px;
+    spacing-columns: 12px; }
+  .weather-button .weather-forecast-time {
+    color: #b3b3b3;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em; }
+  .weather-button .weather-forecast-icon {
+    icon-size: 2.18em; }

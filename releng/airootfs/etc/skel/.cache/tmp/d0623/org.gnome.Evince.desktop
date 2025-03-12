@@ -1,0 +1,11 @@
+[Desktop Entry]
+TryExec=evince
+Name=Evince
+Exec=evince %U
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=org.gnome.Evince
+Categories=
+
+

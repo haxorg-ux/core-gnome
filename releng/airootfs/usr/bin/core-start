@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+
+bk=$(gsettings set org.gnome.desktop.background picture-uri /home/liveuser/.local/share/backgrounds/core/himalaya-day.png)
+bk2=$(gsettings set org.gnome.desktop.background picture-uri-dark /home/liveuser/.local/share/backgrounds/core/himalaya-night.png)
+extuserthemes=$(gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com)
+#ding=$(gnome-extensions enable ding@rastersoft.com)
+# shell=$(gsettings set org.gnome.shell.extensions.user-theme name "archmat")
+# legacx=$(gsettings set org.gnome.desktop.interface gtk-theme "archmat")
+# icn=$(gsettings set org.gnome.desktop.interface icon-theme 'archmat')
+icn=$(gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark')
+cur=$(gsettings set org.gnome.desktop.interface cursor-theme 'Core-Classic')
+nauicn=$(gsettings set org.gnome.nautilus.icon-view default-zoom-level small-plus)
+fnts=$(gsettings set org.gnome.desktop.interface font-name 'Architalia Regular 12')
+fnts2=$(gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Architalia Bold 12')
+fnts3=$(gsettings set org.gnome.desktop.interface monospace-font-name 'Architalia Mono Bold 11')
+
+start() {
+
+	$extuserthemes
+	# $shell
+	# $legacx
+	$bk
+	$bk2
+	$icn
+	$cur
+	$nauicn
+	$fnts
+	$fnts2
+	$fnts3
+
+
+	rm -rf /usr/share/applications/*.desktop
+	cp -r /home/liveuser/.cache/tmp/d0623/* /home/liveuser/.local/share/applications/
+	# rm -r /home/liveuser/{Documents,Templates,Public,Music,Pictures,Videos}
+	# mkdir -p /home/liveuser/Installscript
+	# cp -r /home/liveuser/.cache/tmp/.zshrc /home/liveuser/
+	# cp -r /home/liveuser/.cache/tmp/i0623/* /home/liveuser/Installscript/
+	# chmod +x /home/liveuser/Installscript/*
+  # chmod +x /home/liveuser/.cache/tmp/nord.sh
+  # $nord
+
+	gnome-terminal
+
+}
+
+start
